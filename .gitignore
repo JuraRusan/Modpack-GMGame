@@ -2,8 +2,13 @@
 
 .idea/
 
+/logs
 /crash-reports
 /datapacks
 /resourcepacks
 /screenshots
 /shaderpacks
+
+options.txt
+command_history.txt
+realms_persistence.json
