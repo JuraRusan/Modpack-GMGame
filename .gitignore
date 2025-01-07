@@ -8,7 +8,12 @@
 /resourcepacks
 /screenshots
 /shaderpacks
+/downloads
+/saves
 
 options.txt
 command_history.txt
 realms_persistence.json
+
+usercache.json
+usernamecache.json
