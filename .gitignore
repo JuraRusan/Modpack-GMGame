@@ -11,6 +11,7 @@
 /downloads
 /saves
 /local
+kubejs/node_modules
 
 options.txt
 command_history.txt
