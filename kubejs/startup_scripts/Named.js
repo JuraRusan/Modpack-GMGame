@@ -1,10 +1,10 @@
-Platform.mods.kubejs.name = 'GMGameMods'
+Platform.mods.kubejs.name = "GMGameMods";
 
-StartupEvents.modifyCreativeTab('kubejs:tab', (event) => {
-  event.displayName = 'GMGameMods';
-  event.logo = 'kubejs:logo';
+StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
+  event.displayName = "GMGameMods";
+  event.logo = "kubejs:logo";
 });
 
-StartupEvents.registry('item', (e) => {
-  e.create('kubejs:logo').displayName('GMGame Logo');
+StartupEvents.registry("item", (e) => {
+  e.create("kubejs:logo").displayName("GMGame Logo");
 });
