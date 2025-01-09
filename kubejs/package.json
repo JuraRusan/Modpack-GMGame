@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc.cjs \"**/*.js\""
+  },
+  "dependencies": {
+    "prettier": "^3.2.5"
+  }
+}
