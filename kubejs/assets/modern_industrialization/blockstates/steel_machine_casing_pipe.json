@@ -4,7 +4,6 @@
       "model": "modern_industrialization:block/steel_machine_casing_pipe"
     }
   },
-
   "athena:loader": "athena:limited_pillar",
   "ctm_textures": {
     "bottom": "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/3",
