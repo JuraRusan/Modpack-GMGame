@@ -192,7 +192,7 @@
 	/**
 	 * Which theme to use for the left sidebar
 	 */
-	left-sidebar-theme: transparent;
+	left-sidebar-theme: modern;
 
 	/**
 	 * The pages in the right sidebar
@@ -227,7 +227,7 @@
 	/**
 	 * Which theme to use for the right sidebar
 	 */
-	right-sidebar-theme: transparent;
+	right-sidebar-theme: modern;
 
 	/**
 	 * The pages in the top sidebar
@@ -262,7 +262,7 @@
 	/**
 	 * Which theme to use for the top sidebar
 	 */
-	top-sidebar-theme: transparent;
+	top-sidebar-theme: modern;
 
 	/**
 	 * The pages in the bottom sidebar
@@ -298,7 +298,7 @@
 	/**
 	 * Which theme to use for the bottom sidebar
 	 */
-	bottom-sidebar-theme: transparent;
+	bottom-sidebar-theme: modern;
 }
 
 #binds {
