@@ -1,5 +1,4 @@
 
-
 .idea/
 
 /logs
@@ -12,12 +11,12 @@
 /saves
 /local
 /modern_industrialization
+
 kubejs/node_modules
 
 options.txt
 command_history.txt
 realms_persistence.json
-
 usercache.json
 usernamecache.json
 emi.json
