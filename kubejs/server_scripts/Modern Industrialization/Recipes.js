@@ -1,3 +1,22 @@
 ServerEvents.recipes((e) => {
   e.remove({ id: "modern_industrialization:electric_age/machine/assembler/replicator" });
+
+  e.remove({ id: "modern_industrialization:materials/blast_furnace/molten_redstone" });
+  e.remove({ id: "modern_industrialization:materials/vacuum_freezer/redstone" });
+
+  e.recipes.modern_industrialization
+    .blast_furnace(512, 20 * 10)
+    .itemIn("modern_industrialization:iridium_ingot")
+    .fluidOut("kubejs:molten_iridium", 250);
+
+  e.recipes.modern_industrialization
+    .blast_furnace(8, 20 * 60)
+    .itemIn("modern_industrialization:soldering_alloy_block")
+    .fluidOut("modern_industrialization:soldering_alloy", 810);
+
+  e.recipes.modern_industrialization
+    .ultimate_synthesizer(512, 20 * 10)
+    .itemIn("minecraft:diamond_ore")
+    .itemOut("4x minecraft:diamond_ore")
+    .fluidIn("modern_industrialization:uu_matter", 10);
 });
