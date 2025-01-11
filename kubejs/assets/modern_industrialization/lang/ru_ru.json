@@ -3,5 +3,7 @@
   "rei_categories.modern_industrialization.electric_blast_furnace_superconductor_coil": "ЭДП (Сверхпроводящий уровень)",
   "ebf_tier.modern_industrialization.superconductor_coil": "Сверхпроводник",
   "block.modern_industrialization.ultimate_synthesizer": "Ультимативный синтезатор",
-  "rei_categories.modern_industrialization.ultimate_synthesizer": "Ультимативный синтез"
+  "rei_categories.modern_industrialization.ultimate_synthesizer": "Ультимативный синтез",
+  "block.modern_industrialization.advanced_coke_oven": "Продвинутая коксовая печь",
+  "rei_categories.modern_industrialization.advanced_coke_oven": "Продвинутая коксовая печь"
 }

@@ -3,5 +3,7 @@
   "rei_categories.modern_industrialization.electric_blast_furnace_superconductor_coil": "EBF (Superconductor Tier)",
   "ebf_tier.modern_industrialization.superconductor_coil": "Superconductor",
   "block.modern_industrialization.ultimate_synthesizer": "Ultimate Synthesizer",
-  "rei_categories.modern_industrialization.ultimate_synthesizer": "Ultimate Synthesis"
+  "rei_categories.modern_industrialization.ultimate_synthesizer": "Ultimate Synthesis",
+  "block.modern_industrialization.advanced_coke_oven": "Advanced coke oven",
+  "rei_categories.modern_industrialization.advanced_coke_oven": "Advanced coke oven"
 }
