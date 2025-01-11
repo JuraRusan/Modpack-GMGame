@@ -27,11 +27,10 @@ ServerEvents.recipes((e) => {
   // ---
 
   e.recipes.modern_industrialization
-    .advanced_coke_oven(16, 20 * 60)
+    .advanced_coke_oven(4, 20 * 60)
     .itemIn("32x minecraft:coal_block")
     .itemOut("32x modern_industrialization:coke_block")
     .fluidOut("modern_industrialization:creosote", 8000);
 
   // ---
-
 });
