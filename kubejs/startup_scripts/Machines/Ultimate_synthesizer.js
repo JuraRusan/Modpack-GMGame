@@ -1,7 +1,7 @@
 let ULTIMATE_SYNTHESIZER;
 
-MIMachineEvents.registerRecipeTypes((event) => {
-  ULTIMATE_SYNTHESIZER = event
+MIMachineEvents.registerRecipeTypes((e) => {
+  ULTIMATE_SYNTHESIZER = e
     .register("ultimate_synthesizer")
     .withItemInputs()
     .withItemOutputs()
@@ -9,16 +9,16 @@ MIMachineEvents.registerRecipeTypes((event) => {
     .withFluidOutputs();
 });
 
-MIMachineEvents.registerMachines((event) => {
-  const hatchItem = event.hatchOf("item_input", "item_output", "fluid_input", "fluid_output");
-  const hatchEnergy = event.hatchOf("energy_input");
-  const iridiumMachineCasing = event.memberOfBlock("modern_industrialization:plasma_handling_iridium_machine_casing");
-  const iridiumMachineCasingPipe = event.memberOfBlock("modern_industrialization:iridium_machine_casing_pipe");
-  const superconductorCoil = event.memberOfBlock("modern_industrialization:superconductor_coil");
-  const fusionChamber = event.memberOfBlock("modern_industrialization:fusion_chamber");
-  const iridiumBlock = event.memberOfBlock("modern_industrialization:iridium_block");
+MIMachineEvents.registerMachines((e) => {
+  const hatchItem = e.hatchOf("item_input", "item_output", "fluid_input", "fluid_output");
+  const hatchEnergy = e.hatchOf("energy_input");
+  const iridiumMachineCasing = e.memberOfBlock("modern_industrialization:plasma_handling_iridium_machine_casing");
+  const iridiumMachineCasingPipe = e.memberOfBlock("modern_industrialization:iridium_machine_casing_pipe");
+  const superconductorCoil = e.memberOfBlock("modern_industrialization:superconductor_coil");
+  const fusionChamber = e.memberOfBlock("modern_industrialization:fusion_chamber");
+  const iridiumBlock = e.memberOfBlock("modern_industrialization:iridium_block");
 
-  const ultimateSynthesizerShape = event
+  const ultimateSynthesizerShape = e
     .layeredShape("plasma_handling_iridium_machine_casing", [
       ["C   C", "     ", "     ", "     ", "     ", "     "],
       ["CCECC", "PC CP", "P   P", "P   P", "P   P", " B B "],
@@ -30,19 +30,19 @@ MIMachineEvents.registerMachines((event) => {
     ])
     .key("H", iridiumMachineCasing, hatchItem)
     .key("E", iridiumMachineCasing, hatchEnergy)
-    .key("C", iridiumMachineCasing, event.noHatch())
-    .key("S", superconductorCoil, event.noHatch())
-    .key("P", iridiumMachineCasingPipe, event.noHatch())
-    .key("F", fusionChamber, event.noHatch())
-    .key("B", iridiumBlock, event.noHatch())
+    .key("C", iridiumMachineCasing, e.noHatch())
+    .key("S", superconductorCoil, e.noHatch())
+    .key("P", iridiumMachineCasingPipe, e.noHatch())
+    .key("F", fusionChamber, e.noHatch())
+    .key("B", iridiumBlock, e.noHatch())
     .build();
 
-  event.simpleElectricCraftingMultiBlock(
+  e.simpleElectricCraftingMultiBlock(
     "Ultimate Synthesizer", // English name
     "ultimate_synthesizer", // Internal name
     ULTIMATE_SYNTHESIZER, // Recipe type
     ultimateSynthesizerShape, // Multiblock shape
-    event.progressBar(77, 50, "arrow"), // REI progress bar
+    e.progressBar(77, 50, "arrow"), // REI progress bar
     (itemInputs) => itemInputs.addSlots(56, 35, 1, 3), // REI item inputs
     (itemOutputs) => itemOutputs.addSlots(102, 35, 1, 3), // REI item outputs
     (fluidInputs) => fluidInputs.addSlots(36, 35, 1, 3), // REI fluid inputs
