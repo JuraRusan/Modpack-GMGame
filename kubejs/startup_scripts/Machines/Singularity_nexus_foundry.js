@@ -6,6 +6,7 @@ MIMachineEvents.registerRecipeTypes((e) => {
 
 MIMachineEvents.registerMachines((e) => {
   // A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
   const hatchItem = e.hatchOf("item_input", "item_output");
   const hatchEnergy = e.hatchOf("energy_input");
   const A_key = e.memberOfBlock("modern_industrialization:plasma_handling_iridium_machine_casing");

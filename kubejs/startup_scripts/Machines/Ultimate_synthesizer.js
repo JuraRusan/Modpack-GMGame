@@ -10,31 +10,33 @@ MIMachineEvents.registerRecipeTypes((e) => {
 });
 
 MIMachineEvents.registerMachines((e) => {
+  // A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
   const hatchItem = e.hatchOf("item_input", "item_output", "fluid_input", "fluid_output");
   const hatchEnergy = e.hatchOf("energy_input");
-  const iridiumMachineCasing = e.memberOfBlock("modern_industrialization:plasma_handling_iridium_machine_casing");
-  const iridiumMachineCasingPipe = e.memberOfBlock("modern_industrialization:iridium_machine_casing_pipe");
-  const superconductorCoil = e.memberOfBlock("modern_industrialization:superconductor_coil");
-  const fusionChamber = e.memberOfBlock("modern_industrialization:fusion_chamber");
-  const iridiumBlock = e.memberOfBlock("modern_industrialization:iridium_block");
+  const A_key = e.memberOfBlock("modern_industrialization:plasma_handling_iridium_machine_casing");
+  const B_key = e.memberOfBlock("modern_industrialization:superconductor_coil");
+  const C_key = e.memberOfBlock("modern_industrialization:iridium_machine_casing_pipe");
+  const D_key = e.memberOfBlock("modern_industrialization:fusion_chamber");
+  const E_key = e.memberOfBlock("modern_industrialization:iridium_block");
 
   const ultimateSynthesizerShape = e
     .layeredShape("plasma_handling_iridium_machine_casing", [
-      ["C   C", "     ", "     ", "     ", "     ", "     "],
-      ["CCECC", "PC CP", "P   P", "P   P", "P   P", " B B "],
-      ["HCCCH", "CSSSC", " SSS ", " SSS ", " SSS ", "BSSSB"],
-      ["HCCCH", " SFS ", " SFS ", " SFS ", " SFS ", " SFS "],
-      ["HCCCH", "CSSSC", " SSS ", " SSS ", " SSS ", "BSSSB"],
-      ["CC#CC", "PC CP", "P   P", "P   P", "P   P", " B B "],
-      ["C   C", "     ", "     ", "     ", "     ", "     "],
+      ["A   A", "     ", "     ", "     ", "     ", "     "],
+      ["AAYAA", "CA AC", "C   C", "C   C", "C   C", " E E "],
+      ["ZAAAZ", "ABBBA", " BBB ", " BBB ", " BBB ", "EBBBE"],
+      ["ZAAAZ", " BDB ", " BDB ", " BDB ", " BDB ", " BDB "],
+      ["ZAAAZ", "ABBBA", " BBB ", " BBB ", " BBB ", "EBBBE"],
+      ["AA#AA", "CA AC", "C   C", "C   C", "C   C", " E E "],
+      ["A   A", "     ", "     ", "     ", "     ", "     "],
     ])
-    .key("H", iridiumMachineCasing, hatchItem)
-    .key("E", iridiumMachineCasing, hatchEnergy)
-    .key("C", iridiumMachineCasing, e.noHatch())
-    .key("S", superconductorCoil, e.noHatch())
-    .key("P", iridiumMachineCasingPipe, e.noHatch())
-    .key("F", fusionChamber, e.noHatch())
-    .key("B", iridiumBlock, e.noHatch())
+    .key("Z", A_key, hatchItem)
+    .key("Y", A_key, hatchEnergy)
+    .key("A", A_key, e.noHatch())
+    .key("B", B_key, e.noHatch())
+    .key("C", C_key, e.noHatch())
+    .key("D", D_key, e.noHatch())
+    .key("E", E_key, e.noHatch())
     .build();
 
   e.simpleElectricCraftingMultiBlock(

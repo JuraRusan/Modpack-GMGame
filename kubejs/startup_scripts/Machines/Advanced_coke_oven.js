@@ -10,25 +10,27 @@ MIMachineEvents.registerRecipeTypes((e) => {
 });
 
 MIMachineEvents.registerMachines((e) => {
+  // A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
   const hatch = e.hatchOf("item_input", "item_output", "fluid_input", "fluid_output");
-  const heatproofMachineCasing = e.memberOfBlock("modern_industrialization:heatproof_machine_casing");
-  const fireClayBricks = e.memberOfBlock("modern_industrialization:fire_clay_bricks");
+  const A_key = e.memberOfBlock("modern_industrialization:heatproof_machine_casing");
+  const B_key = e.memberOfBlock("modern_industrialization:fire_clay_bricks");
 
   const advancedCokeOvenShape = e
     .layeredShape("heatproof_machine_casing", [
-      ["CCC", "FFF", "FFF", "   ", "   "],
-      ["CCC", "F F", "FFF", "   ", "   "],
-      ["CCC", "F F", "FFF", "   ", "   "],
-      ["CCC", "F F", "FFF", "   ", "   "],
-      ["CCC", "F F", "FFF", "   ", "   "],
-      ["CCC", "F F", "FFF", "   ", "   "],
-      ["HCH", "C C", "CFC", "FFF", "FFF"],
-      ["HCH", "C C", "F F", "F F", "FFF"],
-      ["HHH", "C#C", "CFC", "CFC", "CFC"],
+      ["AAA", "BBB", "BBB", "   ", "   "],
+      ["AAA", "B B", "BBB", "   ", "   "],
+      ["AAA", "B B", "BBB", "   ", "   "],
+      ["AAA", "B B", "BBB", "   ", "   "],
+      ["AAA", "B B", "BBB", "   ", "   "],
+      ["AAA", "B B", "BBB", "   ", "   "],
+      ["ZAZ", "A A", "ABA", "BBB", "BBB"],
+      ["ZAZ", "A A", "B B", "B B", "BBB"],
+      ["ZZZ", "A#A", "ABA", "ABA", "ABA"],
     ])
-    .key("H", heatproofMachineCasing, hatch)
-    .key("C", heatproofMachineCasing, e.noHatch())
-    .key("F", fireClayBricks, e.noHatch())
+    .key("Z", A_key, hatch)
+    .key("A", A_key, e.noHatch())
+    .key("B", B_key, e.noHatch())
     .build();
 
   e.simpleSteamCraftingMultiBlock(
