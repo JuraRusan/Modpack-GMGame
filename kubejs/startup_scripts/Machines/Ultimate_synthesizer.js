@@ -42,7 +42,7 @@ MIMachineEvents.registerMachines((event) => {
     "ultimate_synthesizer", // Internal name
     ULTIMATE_SYNTHESIZER, // Recipe type
     ultimateSynthesizerShape, // Multiblock shape
-    event.progressBar(77, 33, "arrow"), // REI progress bar
+    event.progressBar(77, 50, "arrow"), // REI progress bar
     (itemInputs) => itemInputs.addSlots(56, 35, 1, 3), // REI item inputs
     (itemOutputs) => itemOutputs.addSlots(102, 35, 1, 3), // REI item outputs
     (fluidInputs) => fluidInputs.addSlots(36, 35, 1, 3), // REI fluid inputs
