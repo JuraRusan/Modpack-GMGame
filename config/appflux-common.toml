@@ -2,7 +2,7 @@
 	#FE can be stored per byte.
 	# Default: 1048576
 	# Range: > 1
-	amount = 1048576
+	amount = 262144
 
 [flux_accessor]
 	#The I/O limit of Flux Accessor. 0 means no limitation.
