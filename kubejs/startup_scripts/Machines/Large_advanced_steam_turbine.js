@@ -25,12 +25,11 @@ MIMachineEvents.registerMachines((e) => {
     LargeAdvancedSteamTurbineShape, // Multiblock shape
     256000, // Maximum energy generation rate (eu/tick)
     (builder) => {
-      // The builder (same as for a single block generator)
       builder.fluid("modern_industrialization:steam", 1);
       builder.fluid("modern_industrialization:heavy_waster_steam", 1);
       builder.fluid("modern_industrialization:high_pressure_steam", 8);
       builder.fluid("modern_industrialization:high_pressure_heavy_water_steam", 8);
-    },
+    }, // The builder (same as for a single block generator)
     "solid_titanium_machine_casing", // Casing of the controller
     "large_advanced_steam_turbine", // Overlay folder
     true, // Front overlay?

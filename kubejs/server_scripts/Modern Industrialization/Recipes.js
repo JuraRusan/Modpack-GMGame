@@ -41,7 +41,22 @@ ServerEvents.recipes((e) => {
     .singularity_nexus_foundry(2048, 20 * 120)
     .itemIn("modern_industrialization:ultradense_metal_ball")
     .itemIn("64x modern_industrialization:nuke")
-    .itemOut("modern_industrialization:singularity")
+    .itemOut("modern_industrialization:singularity");
 
   // ---
+
+  e.shaped(Item.of("modern_industrialization:large_advanced_steam_turbine"), ["ACA", "BDB", "ACA"], {
+    A: "modern_industrialization:large_steam_turbine",
+    B: "modern_industrialization:titanium_rotor",
+    C: "modern_industrialization:large_advanced_pump",
+    D: "modern_industrialization:quantum_machine_hull",
+  });
+
+  e.recipes.modern_industrialization
+    .assembler(8, 20 * 10)
+    .itemIn("4x modern_industrialization:large_steam_turbine")
+    .itemIn("2x modern_industrialization:titanium_rotor")
+    .itemIn("2x modern_industrialization:large_advanced_pump")
+    .itemIn("modern_industrialization:quantum_machine_hull")
+    .itemOut("modern_industrialization:large_advanced_steam_turbine");
 });
