@@ -19,31 +19,7 @@ ServerEvents.recipes((e) => {
     .itemIn("modern_industrialization:soldering_alloy_block")
     .fluidOut("modern_industrialization:soldering_alloy", 810);
 
-  // ---
-
-  e.recipes.modern_industrialization
-    .ultimate_synthesizer(512, 20 * 10)
-    .itemIn("minecraft:diamond_ore")
-    .itemOut("4x minecraft:diamond_ore")
-    .fluidIn("modern_industrialization:uu_matter", 10);
-
-  // ---
-
-  e.recipes.modern_industrialization
-    .advanced_coke_oven(4, 20 * 60)
-    .itemIn("32x minecraft:coal_block")
-    .itemOut("32x modern_industrialization:coke_block")
-    .fluidOut("modern_industrialization:creosote", 8000);
-
-  // ---
-
-  e.recipes.modern_industrialization
-    .singularity_nexus_foundry(2048, 20 * 120)
-    .itemIn("modern_industrialization:ultradense_metal_ball")
-    .itemIn("64x modern_industrialization:nuke")
-    .itemOut("modern_industrialization:singularity");
-
-  // ---
+  // ------------------------------ LARGE_ADVANCED_STEAM_TURBINE
 
   e.shaped(Item.of("modern_industrialization:large_advanced_steam_turbine"), ["ACA", "BDB", "ACA"], {
     A: "modern_industrialization:large_steam_turbine",
@@ -59,4 +35,70 @@ ServerEvents.recipes((e) => {
     .itemIn("2x modern_industrialization:large_advanced_pump")
     .itemIn("modern_industrialization:quantum_machine_hull")
     .itemOut("modern_industrialization:large_advanced_steam_turbine");
+
+  // ------------------------------ ADVANCED_COKE_OVEN
+
+  e.shaped(Item.of("modern_industrialization:advanced_coke_oven"), ["ABA", "BCB", "ABA"], {
+    A: "modern_industrialization:heatproof_machine_casing",
+    B: "modern_industrialization:fire_clay_bricks",
+    C: "modern_industrialization:coke_oven",
+  });
+
+  e.recipes.modern_industrialization
+    .packer(4, 20 * 10)
+    .itemIn("modern_industrialization:coke_oven")
+    .itemIn("4x modern_industrialization:fire_clay_bricks")
+    .itemIn("4x modern_industrialization:heatproof_machine_casing")
+    .itemOut("modern_industrialization:advanced_coke_oven");
+
+  // ---
+
+  e.recipes.modern_industrialization
+    .advanced_coke_oven(4, 20 * 90)
+    .itemIn("32x minecraft:coal_block")
+    .itemOut("32x modern_industrialization:coke_block")
+    .fluidOut("modern_industrialization:creosote", 8000);
+
+  // ------------------------------ SINGULARITY_NEXUS_FOUNDRY
+
+  e.recipes.modern_industrialization
+    .assembler(64, 20 * 120)
+    .itemIn("64x modern_industrialization:silver_block")
+    .itemIn("64x modern_industrialization:robot_arm")
+    .itemIn("32x modern_industrialization:quantum_machine_hull")
+    .itemIn("16x ae2:not_so_mysterious_cube")
+    .itemIn("16x advanced_ae:quantum_alloy_block")
+    .itemIn("16x modern_industrialization:platinum_block")
+    .itemIn("2x modern_industrialization:superconductor_storage_unit")
+    .itemIn("2x modern_industrialization:plasma_handling_iridium_machine_casing")
+    .fluidIn("kubejs:molten_iridium", 4000)
+    .fluidIn("kubejs:molten_neutronium", 4000)
+    .itemOut("modern_industrialization:singularity_nexus_foundry");
+
+  // ---
+
+  e.recipes.modern_industrialization
+    .singularity_nexus_foundry(2048, 20 * 120)
+    .itemIn("modern_industrialization:ultradense_metal_ball")
+    .itemIn("64x modern_industrialization:nuke")
+    .itemOut("modern_industrialization:singularity");
+
+  // ------------------------------ ULTIMATE_SYNTHESIZER
+
+  e.recipes.modern_industrialization
+    .assembler(256, 20 * 480)
+    .itemIn("16x modern_industrialization:platinum_block")
+    .itemIn("2x modern_industrialization:superconductor_storage_unit")
+    .itemIn("2x modern_industrialization:plasma_handling_iridium_machine_casing")
+    .fluidIn("kubejs:molten_iridium", 8000)
+    .fluidIn("kubejs:molten_neutronium", 8000)
+    .itemOut("modern_industrialization:ultimate_synthesizer");
+
+  // ---
+
+  e.recipes.modern_industrialization
+    .ultimate_synthesizer(512, 20 * 10)
+    .itemIn("minecraft:diamond_ore")
+    .itemOut("4x minecraft:diamond_ore")
+    .fluidIn("modern_industrialization:uu_matter", 10);
 });
