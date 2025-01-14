@@ -1,4 +1,6 @@
 {
   "block.mi_tweaks.crystalarium": "Кристаляриум",
-  "rei_categories.mi_tweaks.crystalarium": "Кристаляриум"
+  "rei_categories.mi_tweaks.crystalarium": "Кристаляриум",
+  "block.mi_tweaks.particle_neutron_harvester": "Уловитель нейтронных частиц",
+  "rei_categories.mi_tweaks.particle_neutron_harvester": "Уловитель нейтронных частиц"
 }
