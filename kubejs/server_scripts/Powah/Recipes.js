@@ -7,9 +7,19 @@ ServerEvents.recipes((e) => {
     A: "minecraft:blaze_rod",
   });
 
-  // ----
-
   e.shapeless("9x minecraft:blaze_rod", ["kubejs:blaze_block"]);
+
+  e.recipes.modern_industrialization
+    .packer(4, 20 * 10)
+    .itemIn("9x minecraft:blaze_rod")
+    .itemOut("kubejs:blaze_block");
+
+  e.recipes.modern_industrialization
+    .unpacker(4, 20 * 10)
+    .itemIn("kubejs:blaze_block")
+    .itemOut("9x minecraft:blaze_rod");
+
+  // ----
 
   energizing("powah:blazing_crystal_block", ["kubejs:blaze_block"], 120000 * 9 * 0.9);
   energizing("powah:niotic_crystal_block", ["minecraft:diamond_block"], 300000 * 9 * 0.9);
