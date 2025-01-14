@@ -72,7 +72,7 @@ ServerEvents.recipes((e) => {
     .itemIn("2x modern_industrialization:superconductor_storage_unit")
     .itemIn("2x modern_industrialization:plasma_handling_iridium_machine_casing")
     .fluidIn("kubejs:molten_iridium", 4000)
-    .fluidIn("kubejs:molten_neutronium", 4000)
+    .fluidIn("kubejs:molten_neutron", 4000)
     .itemOut("modern_industrialization:singularity_nexus_foundry");
 
   // ---
@@ -87,8 +87,8 @@ ServerEvents.recipes((e) => {
 
   e.recipes.modern_industrialization
     .singularity_nexus_foundry(536870912, 20 * 3840)
-    .itemIn("kubejs:neutronium_star")
-    .itemOut("kubejs:charged_neutronium_star");
+    .itemIn("kubejs:neutron_star")
+    .itemOut("kubejs:charged_neutron_star");
 
   // ------------------------------ ULTIMATE_SYNTHESIZER
 
@@ -107,11 +107,11 @@ ServerEvents.recipes((e) => {
 
   e.recipes.modern_industrialization
     .ultimate_synthesizer(1024, 20 * 480)
-    .itemIn("32x kubejs:neutronium_catalyst")
+    .itemIn("32x kubejs:neutron_catalyst")
     .fluidIn("modern_industrialization:helium_3", 1000 * 128)
     .fluidIn("advanced_ae:quantum_infusion_source", 1000 * 1024)
     .fluidIn("modern_industrialization:uu_matter", 1000 * 128)
     .fluidIn("modern_industrialization:argon", 1000 * 256)
     .fluidIn("modern_industrialization:cryofluid", 1000 * 256)
-    .itemOut("kubejs:neutronium_star");
+    .itemOut("kubejs:neutron_star");
 });

@@ -20,5 +20,5 @@ ServerEvents.recipes((e) => {
     .itemIn("kubejs:neutron_capturing_mesh", 0.06)
     .itemOut("kubejs:neutron_dust")
     .itemOut("kubejs:neutron_dust", 0.12)
-    .itemOut("kubejs:neutronium_accumulation", 0.01);
+    .itemOut("kubejs:neutron_accumulation", 0.01);
 });

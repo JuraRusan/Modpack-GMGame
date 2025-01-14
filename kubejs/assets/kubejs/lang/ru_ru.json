@@ -1,17 +1,17 @@
 {
   "block.kubejs.blaze_block": "Полыхающий блок",
-  "block.kubejs.neutronium_block": "Нейтрониевый блок",
+  "block.kubejs.neutron_block": "Нейтронный блок",
   "block.kubejs.molten_iridium": "Жидкий иридий",
-  "block.kubejs.molten_neutronium": "Жидкий нейтроний",
+  "block.kubejs.molten_neutron": "Жидкий нейтроний",
   "item.kubejs.molten_iridium_bucket": "Ведро с жидким иридием",
-  "item.kubejs.molten_neutronium_bucket": "Ведро с жидким нейтронием",
+  "item.kubejs.molten_neutron_bucket": "Ведро с жидким нейтроном",
   "item.kubejs.universal_press": "Универсальный пресс",
   "item.kubejs.neutron_dust": "Нейтронная пыль",
   "item.kubejs.neutron_nugget": "Нейтронный самородок",
-  "item.kubejs.neutronium_ingot": "Нейтрониевый слиток",
+  "item.kubejs.neutron_ingot": "Нейтронный слиток",
   "item.kubejs.neutron_capturing_mesh": "Сетка для захвата нейтронов",
-  "item.kubejs.neutronium_accumulation": "Скопление нейтрония",
-  "item.kubejs.neutronium_star": "Нейтрониевая звезда",
-  "item.kubejs.charged_neutronium_star": "Заряженная нейтрониевая звезда",
-  "item.kubejs.neutronium_catalyst": "Нейтрониевый катализатор"
+  "item.kubejs.neutron_accumulation": "Скопление нейтронов",
+  "item.kubejs.neutron_star": "Нейтронная звезда",
+  "item.kubejs.charged_neutron_star": "Заряженная нейтронная звезда",
+  "item.kubejs.neutron_catalyst": "Нейтронный катализатор"
 }

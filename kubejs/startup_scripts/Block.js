@@ -8,8 +8,8 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_iron_tool")
     .requiresTool(true);
 
-  e.create("kubejs:neutronium_block")
-    .displayName("Neutronium Block")
+  e.create("kubejs:neutron_block")
+    .displayName("Neutron Block")
     .soundType("netherite_block")
     .hardness(5)
     .resistance(4)
