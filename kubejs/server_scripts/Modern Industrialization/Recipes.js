@@ -79,8 +79,10 @@ ServerEvents.recipes((e) => {
 
   e.recipes.modern_industrialization
     .singularity_nexus_foundry(2048, 20 * 120)
-    .itemIn("modern_industrialization:ultradense_metal_ball")
+    .itemIn("64x modern_industrialization:ultradense_metal_ball")
     .itemIn("64x modern_industrialization:nuke")
+    .itemIn("64x modern_industrialization:plutonium_block")
+    .itemIn("64x minecraft:nether_star")
     .itemOut("modern_industrialization:singularity");
 
   // ------------------------------ ULTIMATE_SYNTHESIZER
