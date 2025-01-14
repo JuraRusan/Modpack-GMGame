@@ -55,9 +55,9 @@ MIMachineEvents.registerMachines((e) => {
     "singularity_nexus_foundry", // Internal name
     SINGULARITY_NEXUS_FOUNDRY, // Recipe type
     singularityNexusFoundryShape, // Multiblock shape
-    e.progressBar(77, 50, "wiremill"), // REI progress bar
-    (itemInputs) => itemInputs.addSlots(56, 35, 1, 2), // REI item inputs
-    (itemOutputs) => itemOutputs.addSlots(102, 35, 1, 2), // REI item outputs
+    e.progressBar(77, 43, "wiremill"), // REI progress bar
+    (itemInputs) => itemInputs.addSlots(31, 35, 2, 2), // REI item inputs
+    (itemOutputs) => itemOutputs.addSlots(107, 35, 2, 2), // REI item outputs
     () => {}, // REI fluid inputs
     () => {}, // REI fluid outputs
     "plasma_handling_iridium_machine_casing", // Casing of the controller
