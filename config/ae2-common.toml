@@ -122,7 +122,7 @@
 [condenser]
 	# Default: 256
 	# Range: > -2147483648
-	matterBalls = 256
+	matterBalls = 1024
 	# Default: 256000
 	# Range: > -2147483648
 	singularity = 256000
