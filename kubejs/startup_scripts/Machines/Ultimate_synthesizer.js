@@ -23,11 +23,11 @@ MIMachineEvents.registerMachines((e) => {
   const ultimateSynthesizerShape = e
     .layeredShape("plasma_handling_iridium_machine_casing", [
       ["A   A", "     ", "     ", "     ", "     ", "     "],
-      ["AAYAA", "CA AC", "C   C", "C   C", "C   C", " E E "],
+      ["AZYZA", "CA AC", "C   C", "C   C", "C   C", " E E "],
       ["ZAAAZ", "ABBBA", " BBB ", " BBB ", " BBB ", "EBBBE"],
       ["ZAAAZ", " BDB ", " BDB ", " BDB ", " BDB ", " BDB "],
       ["ZAAAZ", "ABBBA", " BBB ", " BBB ", " BBB ", "EBBBE"],
-      ["AA#AA", "CA AC", "C   C", "C   C", "C   C", " E E "],
+      ["AZ#ZA", "CA AC", "C   C", "C   C", "C   C", " E E "],
       ["A   A", "     ", "     ", "     ", "     ", "     "],
     ])
     .key("Z", A_key, hatchItem)
@@ -44,11 +44,11 @@ MIMachineEvents.registerMachines((e) => {
     "ultimate_synthesizer", // Internal name
     ULTIMATE_SYNTHESIZER, // Recipe type
     ultimateSynthesizerShape, // Multiblock shape
-    e.progressBar(77, 50, "arrow"), // REI progress bar
-    (itemInputs) => itemInputs.addSlots(56, 35, 1, 3), // REI item inputs
-    (itemOutputs) => itemOutputs.addSlots(102, 35, 1, 3), // REI item outputs
-    (fluidInputs) => fluidInputs.addSlots(36, 35, 1, 3), // REI fluid inputs
-    (fluidOutputs) => fluidOutputs.addSlots(122, 35, 1, 3), // REI fluid outputs
+    e.progressBar(77, 69, "arrow"), // REI progress bar
+    (itemInputs) => itemInputs.addSlots(31, 35, 2, 2), // REI item inputs
+    (itemOutputs) => itemOutputs.addSlots(107, 35, 2, 2), // REI item outputs
+    (fluidInputs) => fluidInputs.addSlots(31, 72, 2, 3), // REI fluid inputs
+    (fluidOutputs) => fluidOutputs.addSlots(107, 72, 2, 3), // REI fluid outputs
     "plasma_handling_iridium_machine_casing", // Casing of the controller
     "ultimate_synthesizer", // Overlay folder
     true, // Front overlay?
