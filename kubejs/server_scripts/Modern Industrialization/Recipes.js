@@ -88,12 +88,14 @@ ServerEvents.recipes((e) => {
   // ------------------------------ ULTIMATE_SYNTHESIZER
 
   e.recipes.modern_industrialization
-    .assembler(256, 20 * 480)
-    .itemIn("16x modern_industrialization:platinum_block")
-    .itemIn("2x modern_industrialization:superconductor_storage_unit")
-    .itemIn("2x modern_industrialization:plasma_handling_iridium_machine_casing")
-    .fluidIn("kubejs:molten_iridium", 8000)
-    .fluidIn("kubejs:molten_neutronium", 8000)
+    .assembler(1024, 20 * 480)
+    .itemIn("32x modern_industrialization:quantum_circuit")
+    .itemIn("32x modern_industrialization:quantum_machine_hull")
+    .itemIn("8x modern_industrialization:quantum_upgrade")
+    .itemIn("2x modern_industrialization:quantum_barrel")
+    .itemIn("2x modern_industrialization:quantum_tank")
+    .fluidIn("modern_industrialization:uu_matter", 16000)
+    .fluidIn("modern_industrialization:uu_matter", 16000)
     .itemOut("modern_industrialization:ultimate_synthesizer");
 
   // ---
