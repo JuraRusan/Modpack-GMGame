@@ -1,0 +1,17 @@
+{
+  "block.kubejs.blaze_block": "Blaze Block",
+  "block.kubejs.neutronium_block": "Neutronium Block",
+  "block.kubejs.molten_iridium": "Molten Iridium",
+  "block.kubejs.molten_neutronium": "Molten Neutronium",
+  "item.kubejs.molten_iridium_bucket": "Molten Iridium Bucket",
+  "item.kubejs.molten_neutronium_bucket": "Molten Neutronium Bucket",
+  "item.kubejs.universal_press": "Universal Press",
+  "item.kubejs.neutron_dust": "Neutron Dust",
+  "item.kubejs.neutron_nugget": "Neutron Nugget",
+  "item.kubejs.neutronium_ingot": "Neutronium Ingot",
+  "item.kubejs.neutron_capturing_mesh": "Neutron Capturing Mesh",
+  "item.kubejs.neutronium_accumulation": "Neutronium Accumulation",
+  "item.kubejs.neutronium_star": "Neutronium Star",
+  "item.kubejs.charged_neutronium_star": "Charged Neutronium Star",
+  "item.kubejs.neutronium_catalyst": "Neutronium Catalyst"
+}
