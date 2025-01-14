@@ -108,10 +108,10 @@ ServerEvents.recipes((e) => {
   e.recipes.modern_industrialization
     .ultimate_synthesizer(1024, 20 * 480)
     .itemIn("4x kubejs:neutronium_catalyst")
-    .fluidIn("modern_industrialization:helium_3", 1000 * 256)
+    .fluidIn("modern_industrialization:helium_3", 1000 * 128)
     .fluidIn("advanced_ae:quantum_infusion_source", 1000 * 1024)
     .fluidIn("modern_industrialization:uu_matter", 1000 * 128)
-    .fluidIn("modern_industrialization:argon", 1000 * 512)
+    .fluidIn("modern_industrialization:argon", 1000 * 256)
     .fluidIn("modern_industrialization:cryofluid", 1000 * 256)
     .itemOut("kubejs:neutronium_star");
 });
