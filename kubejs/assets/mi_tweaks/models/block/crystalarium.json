@@ -1,5 +1,5 @@
 {
-  "casing": "lv",
+  "casing": "steel",
   "default_overlays": {
     "fluid_auto": "modern_industrialization:block/overlays/fluid_auto",
     "front": "mi_tweaks:block/machines/crystalarium/overlay_front",

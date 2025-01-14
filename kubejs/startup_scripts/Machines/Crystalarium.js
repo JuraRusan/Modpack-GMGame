@@ -9,18 +9,16 @@ MITweaksMachineEvents.registerPowerlessMachines((e) => {
     "Crystalarium", // English name
     "crystalarium", // Internal name
     CRYSTALARIUM, // Recipe type
-    -1, // Background height (or -1 for default value)
-    e.progressBar(105, 45, "circuit"), // REI progress bar
-    9, // Number of slots: item inputs
-    3, // Number of slots: item outputs
+    186, // Background height (or -1 for default value)
+    e.progressBar(85, 45, "circuit"), // REI progress bar
+    3, // Number of slots: item inputs
+    9, // Number of slots: item outputs
     0, // Number of slots: fluid inputs
     0, // Number of slots: fluid outputs
     16, // Capacity for fluid slots
-    (itemInputs) => itemInputs.addSlots(31, 35, 2, 2), // REI item inputs
-    (itemOutputs) => itemOutputs.addSlots(107, 35, 2, 2), // REI item outputs
-    (fluidInputs) => {}, // REI fluid inputs
-    (fluidOutputs) => {}, // REI fluid outputs
-    "electric", // Casing of the controller
+    (items) => items.addSlots(32, 27, 1, 3).addSlots(109, 27, 3, 3), // REI item inputs/outputs
+    (fluids) => {}, // REI fluid inputsoutputs
+    "steel", // Casing of the controller
     "crystalarium", // Overlay folder
     true, // Front overlay?
     false, // Top overlay?
