@@ -2,7 +2,7 @@
 	#FE can be stored per byte.
 	# Default: 1048576
 	# Range: > 1
-	amount = 262144
+	amount = 131072
 
 [flux_accessor]
 	#The I/O limit of Flux Accessor. 0 means no limitation.
@@ -18,4 +18,4 @@
 
 [third_party_support]
 	#Enable MI-EU support.
-	enable_mi = false
+	enable_mi = true
