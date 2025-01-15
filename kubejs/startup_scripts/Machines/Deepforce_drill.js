@@ -50,8 +50,8 @@ MIMachineEvents.registerMachines((e) => {
     (itemOutputs) => itemOutputs.addSlots(107, 35, 2, 2), // REI item outputs
     (fluidInputs) => {}, // REI fluid inputs
     (fluidOutputs) => {}, // REI fluid outputs
-    "clean_deepforce_drillstainless_steel_machine_casing", // Casing of the controller
-    "", // Overlay folder
+    "clean_stainless_steel_machine_casing", // Casing of the controller
+    "deepforce_drill", // Overlay folder
     true, // Front overlay?
     false, // Top overlay?
     false // Side overlay?
