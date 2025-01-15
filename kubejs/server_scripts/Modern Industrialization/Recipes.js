@@ -114,4 +114,28 @@ ServerEvents.recipes((e) => {
     .fluidIn("modern_industrialization:argon", 1000 * 256)
     .fluidIn("modern_industrialization:cryofluid", 1000 * 256)
     .itemOut("kubejs:neutron_star");
+
+  // ------------------------------ DEEPFORCE_DRILL
+
+  e.shaped(Item.of("modern_industrialization:deepforce_drill"), ["ACA", "BDB", "ACA"], {
+    A: "modern_industrialization:electric_quarry",
+    B: "modern_industrialization:stainless_steel_rotor",
+    C: "modern_industrialization:advanced_motor",
+    D: "modern_industrialization:clean_stainless_steel_machine_casing",
+  });
+
+  e.recipes.modern_industrialization
+    .assembler(8, 20 * 10)
+    .itemIn("4x modern_industrialization:electric_quarry")
+    .itemIn("2x modern_industrialization:stainless_steel_rotor")
+    .itemIn("2x modern_industrialization:advanced_motor")
+    .itemIn("modern_industrialization:clean_stainless_steel_machine_casing")
+    .itemOut("modern_industrialization:deepforce_drill");
+
+  // ---
+
+  e.recipes.modern_industrialization
+    .deepforce_drill(128, 20 * 60)
+    .itemIn("modern_industrialization:stainless_steel_drill", 0.10)
+    .itemOut("kubejs:deepsteel", 0.25)
 });

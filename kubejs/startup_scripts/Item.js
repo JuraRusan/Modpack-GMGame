@@ -10,6 +10,8 @@ StartupEvents.registry("item", (e) => {
   e.create("kubejs:charged_neutron_star").displayName("Charged Neutron Star");
   e.create("kubejs:neutron_catalyst").displayName("Neutron Catalyst");
 
+  e.create("kubejs:deepsteel").displayName("Deepsteel");
+
   e.create("infinity_lava_cell", "custom_infinity_cell")
     .texture("kubejs:item/infinity_lava_cell")
     .fluidType("minecraft:lava")
