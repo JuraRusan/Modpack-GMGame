@@ -156,7 +156,7 @@ ServerEvents.recipes((e) => {
 
   e.recipes.modern_industrialization
     .deepforce_drill(128, 20 * 60)
-    .itemIn("modern_industrialization:stainless_steel_drill", 0.1)
+    .itemIn("kubejs:stainless_steel_drill_diamond_coating", 0.1)
     .itemOut("kubejs:deepsteel", 0.25);
 
   // ------------------------------ MEGAPRESS
