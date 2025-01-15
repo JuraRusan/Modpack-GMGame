@@ -18,6 +18,16 @@ ServerEvents.recipes((e) => {
     .fluidOut("kubejs:molten_iridium", 250);
 
   e.recipes.modern_industrialization
+    .blast_furnace(1024, 20 * 4)
+    .itemIn("kubejs:neutron_ingot")
+    .fluidOut("kubejs:molten_neutron", 250);
+
+  e.recipes.modern_industrialization
+    .blast_furnace(1024, 20 * 4 * 9)
+    .itemIn("kubejs:neutron_block")
+    .fluidOut("kubejs:molten_neutron", 250 * 9);
+
+  e.recipes.modern_industrialization
     .blast_furnace(8, 20 * 60)
     .itemIn("modern_industrialization:soldering_alloy_block")
     .fluidOut("modern_industrialization:soldering_alloy", 810);
