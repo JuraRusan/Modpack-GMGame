@@ -56,6 +56,25 @@ ServerEvents.recipes((e) => {
     .itemIn("modern_industrialization:quantum_machine_hull")
     .itemOut("modern_industrialization:large_advanced_steam_turbine");
 
+  // ------------------------------ NEXTGEN_PLASMA_TURBINE
+
+  e.shaped(Item.of("modern_industrialization:nextgen_plasma_turbine"), ["ACA", "BDB", "AEA"], {
+    A: "modern_industrialization:plasma_turbine",
+    B: "modern_industrialization:titanium_rotor",
+    C: "modern_industrialization:large_advanced_pump",
+    D: "modern_industrialization:quantum_machine_hull",
+    E: "modern_industrialization:superconductor_coil",
+  });
+
+  e.recipes.modern_industrialization
+    .assembler(8, 20 * 10)
+    .itemIn("4x modern_industrialization:plasma_turbine")
+    .itemIn("2x modern_industrialization:titanium_rotor")
+    .itemIn("2x modern_industrialization:large_advanced_pump")
+    .itemIn("modern_industrialization:quantum_machine_hull")
+    .itemIn("modern_industrialization:superconductor_coil")
+    .itemOut("modern_industrialization:nextgen_plasma_turbine");
+
   // ------------------------------ ADVANCED_COKE_OVEN
 
   e.shaped(Item.of("modern_industrialization:advanced_coke_oven"), ["ABA", "BCB", "ABA"], {

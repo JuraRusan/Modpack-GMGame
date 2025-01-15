@@ -12,5 +12,6 @@
   "rei_categories.modern_industrialization.deepforce_drill": "Глубинный Бур",
   "block.modern_industrialization.deepforce_drill": "Глубинный Бур",
   "rei_categories.modern_industrialization.megapress": "Мегапресс",
-  "block.modern_industrialization.megapress": "Мегапресс"
+  "block.modern_industrialization.megapress": "Мегапресс",
+  "block.modern_industrialization.nextgen_plasma_turbine": "Плазменная турбина следующего поколения"
 }
