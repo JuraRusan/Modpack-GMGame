@@ -6,7 +6,7 @@ MIMachineEvents.registerMachines((e) => {
   const A_key = e.memberOfBlock("modern_industrialization:solid_titanium_machine_casing");
   const B_key = e.memberOfBlock("modern_industrialization:titanium_machine_casing_pipe");
 
-  const LargeAdvancedSteamTurbineShape = e
+  const largeAdvancedSteamTurbineShape = e
     .layeredShape("solid_titanium_machine_casing", [
       ["AAA", "AYA", "AAA"],
       ["BBB", "BBB", "BBB"],
@@ -22,7 +22,7 @@ MIMachineEvents.registerMachines((e) => {
   e.simpleGeneratorMultiBlock(
     "Large advanced steam turbine", // English name
     "large_advanced_steam_turbine", // Internal name
-    LargeAdvancedSteamTurbineShape, // Multiblock shape
+    largeAdvancedSteamTurbineShape, // Multiblock shape
     256000, // Maximum energy generation rate (eu/tick)
     (builder) => {
       builder.fluid("modern_industrialization:steam", 1);
