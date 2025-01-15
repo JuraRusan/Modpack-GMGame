@@ -10,5 +10,7 @@
   "rei_categories.modern_industrialization.singularity_nexus_foundry": "NEXUS литейная",
   "block.modern_industrialization.large_advanced_steam_turbine": "Большая усовершенствованная паровая турбина",
   "rei_categories.modern_industrialization.deepforce_drill": "Глубинный Бур",
-  "block.modern_industrialization.deepforce_drill": "Глубинный Бур"
+  "block.modern_industrialization.deepforce_drill": "Глубинный Бур",
+  "rei_categories.modern_industrialization.megapress": "Мегапресс",
+  "block.modern_industrialization.megapress": "Мегапресс"
 }

@@ -7,6 +7,9 @@ ServerEvents.recipes((e) => {
   e.remove({ id: "modern_industrialization:vanilla_recipes/implosion_compressor/nether_star" });
   e.remove({ id: "modern_industrialization:electric_age/component/implosion_compressor/singularity" });
 
+  e.remove({ id: "modern_industrialization:electric_age/component/craft/ultradense_metal_ball_asbl" });
+  e.remove({ id: "modern_industrialization:assembler_generated/electric_age/component/craft/ultradense_metal_ball" });
+
   // ---
 
   e.recipes.modern_industrialization
@@ -136,6 +139,33 @@ ServerEvents.recipes((e) => {
 
   e.recipes.modern_industrialization
     .deepforce_drill(128, 20 * 60)
-    .itemIn("modern_industrialization:stainless_steel_drill", 0.10)
-    .itemOut("kubejs:deepsteel", 0.25)
+    .itemIn("modern_industrialization:stainless_steel_drill", 0.1)
+    .itemOut("kubejs:deepsteel", 0.25);
+
+  // ------------------------------ MEGAPRESS
+
+  e.shaped(Item.of("modern_industrialization:megapress"), ["ACA", "BDB", "ACA"], {
+    A: "modern_industrialization:electric_compressor",
+    B: "modern_industrialization:stainless_steel_machine_casing_pipe",
+    C: "modern_industrialization:large_advanced_motor",
+    D: "modern_industrialization:clean_stainless_steel_machine_casing",
+  });
+
+  e.recipes.modern_industrialization
+    .assembler(8, 20 * 10)
+    .itemIn("4x modern_industrialization:electric_compressor")
+    .itemIn("2x modern_industrialization:stainless_steel_machine_casing_pipe")
+    .itemIn("2x modern_industrialization:large_advanced_motor")
+    .itemIn("modern_industrialization:clean_stainless_steel_machine_casing")
+    .itemOut("modern_industrialization:megapress");
+
+  // ---
+
+  e.recipes.modern_industrialization
+    .megapress(1024, 20 * 45)
+    .itemIn("64x kubejs:deepsteel")
+    .itemIn("64x modern_industrialization:lead_plate")
+    .itemIn("32x modern_industrialization:tungsten_large_plate")
+    .itemIn("16x modern_industrialization:iridium_plate")
+    .itemOut("modern_industrialization:ultradense_metal_ball");
 });

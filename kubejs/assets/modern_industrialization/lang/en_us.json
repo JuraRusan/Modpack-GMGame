@@ -10,5 +10,7 @@
   "rei_categories.modern_industrialization.singularity_nexus_foundry": "NEXUS foundry",
   "block.modern_industrialization.large_advanced_steam_turbine": "Large Advanced Steam Turbine",
   "rei_categories.modern_industrialization.deepforce_drill": "Deepforce Drill",
-  "block.modern_industrialization.deepforce_drill": "Deepforce Drill"
+  "block.modern_industrialization.deepforce_drill": "Deepforce Drill",
+  "rei_categories.modern_industrialization.megapress": "Megapress",
+  "block.modern_industrialization.megapress": "Megapress"
 }
