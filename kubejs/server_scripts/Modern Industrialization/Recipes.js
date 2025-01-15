@@ -32,6 +32,13 @@ ServerEvents.recipes((e) => {
     .itemIn("modern_industrialization:soldering_alloy_block")
     .fluidOut("modern_industrialization:soldering_alloy", 810);
 
+  e.recipes.modern_industrialization
+    .assembler(8, 20 * 10)
+    .itemIn("32x modern_industrialization:diamond_dust")
+    .itemIn("4x modern_industrialization:stainless_steel_drill")
+    .fluidIn("modern_industrialization:soldering_alloy", 2000)
+    .itemOut("4x kubejs:stainless_steel_drill_diamond_coating");
+
   // ------------------------------ LARGE_ADVANCED_STEAM_TURBINE
 
   e.shaped(Item.of("modern_industrialization:large_advanced_steam_turbine"), ["ACA", "BDB", "ACA"], {

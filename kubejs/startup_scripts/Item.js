@@ -12,6 +12,8 @@ StartupEvents.registry("item", (e) => {
 
   e.create("kubejs:deepsteel").displayName("Deepsteel");
 
+  e.create("kubejs:stainless_steel_drill_diamond_coating").displayName("Stainless steel drill diamond coating");
+
   e.create("infinity_lava_cell", "custom_infinity_cell")
     .texture("kubejs:item/infinity_lava_cell")
     .fluidType("minecraft:lava")
